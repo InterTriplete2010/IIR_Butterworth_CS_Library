@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 using System.Collections.Generic;
 using System.Text;
@@ -852,6 +852,22 @@ namespace IIR_Butterworth_CS_Library
         public double[][] Lp2bp(double W_f1, double W_f2, int order_filt)
         {
 
+            //Check that the normalized frequencies are within the correct range of values
+            if (W_f1 <= 0 | W_f1 >= 1 | W_f2 <= 0 | W_f2 >= 1)
+            {
+
+                throw new Exception("Cut-off frequencies must be in the (0,1) range");
+
+            }
+
+            //Check that the order of the filter is > 0
+            if (order_filt <= 0)
+            {
+
+                throw new Exception("The order of the filter must be > 0");
+
+            }
+
             if (!(save_filt_coeff == null))
             {
 
@@ -983,6 +999,22 @@ namespace IIR_Butterworth_CS_Library
         //Estimate the coeffients of a band-stop filter and return a 2 rows x N coefficients matrix. Row 1 = Numerator; Row 2 = Denumerator
         public double[][] Lp2bs(double W_f1, double W_f2, int order_filt)
         {
+
+            //Check that the normalized frequencies are within the correct range of values
+            if (W_f1 <= 0 | W_f1 >= 1 | W_f2 <= 0 | W_f2 >= 1)
+            {
+
+                throw new Exception("Cut-off frequencies must be in the (0,1) range");
+
+            }
+
+            //Check that the order of the filter is > 0
+            if (order_filt <= 0)
+            {
+
+                throw new Exception("The order of the filter must be > 0");
+
+            }
 
             if (!(save_filt_coeff == null))
             {
@@ -1140,6 +1172,22 @@ namespace IIR_Butterworth_CS_Library
         public double[][] Lp2hp(double W_f1, int order_filt)
         {
 
+            //Check that the normalized frequencies are within the correct range of values
+            if (W_f1 <= 0 | W_f1 >= 1)
+            {
+
+                throw new Exception("Cut-off frequencies must be in the (0,1) range");
+
+            }
+
+            //Check that the order of the filter is > 0
+            if (order_filt <= 0)
+            {
+
+                throw new Exception("The order of the filter must be > 0");
+
+            }
+
             if (!(save_filt_coeff == null))
             {
 
@@ -1238,6 +1286,22 @@ namespace IIR_Butterworth_CS_Library
         //Estimate the coeffients of a low-pass filter and return a 2 rows x N coefficients matrix. Row 1 = Numerator; Row 2 = Denumerator
         public double[][] Lp2lp(double W_f2, int order_filt)
         {
+
+            //Check that the normalized frequencies are within the correct range of values
+            if (W_f2 <= 0 | W_f2 >= 1)
+            {
+
+                throw new Exception("Cut-off frequencies must be in the (0,1) range");
+
+            }
+
+            //Check that the order of the filter is > 0
+            if (order_filt <= 0)
+            {
+
+                throw new Exception("The order of the filter must be > 0");
+
+            }
 
             if (!(save_filt_coeff == null))
             {
