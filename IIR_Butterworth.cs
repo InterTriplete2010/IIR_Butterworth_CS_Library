@@ -220,7 +220,7 @@ namespace IIR_Butterworth_CS_Library
 
         }
 
-        //Step 4: Transform to state-space
+         //Step 4: Transform to state-space
         //Intermidiate step: calculate the coefficients of the polynomial (based on Matlab code)
         public Complex[] Poly(Complex[] temp_array_poly, int col_poly)
         {
@@ -244,16 +244,8 @@ namespace IIR_Butterworth_CS_Library
 
             }
 
-              //Make sure that only the real part is saved
-            for (int kk = 0; kk < coeff_pol_f.Length; kk++)
-            {
-
-                coeff_pol_f[kk] = coeff_pol_f[kk].Real;
-
-            }
-
             return coeff_pol_f;
-            
+
         }
 
 
