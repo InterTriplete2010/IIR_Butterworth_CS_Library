@@ -15,3 +15,5 @@ Each filter function will return a 2 rows x N coefficients 2D vector, where Row 
 5) Check the stability of the filter: the method is "bool Check_stability_iir(double[][] coeff_filt)". The argument is the 2D array containing the filter coefficients. It returns "true" if the filter is stable, "false" if it is unstable. 
 
 6) Filter the data: the method is "double[] Filter_Data(double[][] coeff_filt, double[] pre_filt_signal)". The two arguments are the filter coefficients and the signal to be filtered. It returns the filtered signal.
+
+If you have any question and/or want to report bugs, please e-mail me (Alex) at: pressalex@hotmail.com
