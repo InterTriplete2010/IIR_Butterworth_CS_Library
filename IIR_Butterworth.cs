@@ -633,7 +633,7 @@ namespace IIR_Butterworth_CS_Library
                                     case 0:
 
                                         Math.DivRem(kk + 1, 2, out int div_rem_I);
-                                        if ((div_rem_I != 0) | (kk == 0))
+                                        if ((div_rem_I != 0) || (kk == 0))
                                         {
 
                                             a[kk, gg] = temp_matrix_a[track_index_coeff, 1];
@@ -652,7 +652,7 @@ namespace IIR_Butterworth_CS_Library
                                     case -1:
 
                                         Math.DivRem(kk + 1, 2, out int div_rem_II);
-                                        if ((div_rem_II != 0) | (kk == 0))
+                                        if ((div_rem_II != 0) || (kk == 0))
                                         {
 
                                             a[kk, gg] = temp_matrix_a[track_index_coeff, 2];
@@ -862,7 +862,7 @@ namespace IIR_Butterworth_CS_Library
             }
             
             //Check that the normalized frequencies are within the correct range of values
-            if (W_f1 <= 0 | W_f1 >= 1 | W_f2 <= 0 | W_f2 >= 1)
+            if (W_f1 <= 0 || W_f1 >= 1 || W_f2 <= 0 || W_f2 >= 1)
             {
 
                 throw new Exception("Cut-off frequencies must be in the (0,1) range");
@@ -1018,7 +1018,7 @@ namespace IIR_Butterworth_CS_Library
             }
             
             //Check that the normalized frequencies are within the correct range of values
-            if (W_f1 <= 0 | W_f1 >= 1 | W_f2 <= 0 | W_f2 >= 1)
+            if (W_f1 <= 0 || W_f1 >= 1 || W_f2 <= 0 || W_f2 >= 1)
             {
 
                 throw new Exception("Cut-off frequencies must be in the (0,1) range");
@@ -1190,7 +1190,7 @@ namespace IIR_Butterworth_CS_Library
         {
 
             //Check that the normalized frequencies are within the correct range of values
-            if (W_f1 <= 0 | W_f1 >= 1)
+            if (W_f1 <= 0 || W_f1 >= 1)
             {
 
                 throw new Exception("Cut-off frequencies must be in the (0,1) range");
@@ -1305,7 +1305,7 @@ namespace IIR_Butterworth_CS_Library
         {
 
             //Check that the normalized frequencies are within the correct range of values
-            if (W_f2 <= 0 | W_f2 >= 1)
+            if (W_f2 <= 0 || W_f2 >= 1)
             {
 
                 throw new Exception("Cut-off frequencies must be in the (0,1) range");
