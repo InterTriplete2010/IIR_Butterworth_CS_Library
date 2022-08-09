@@ -1,4 +1,4 @@
-C# Library to calculate the coefficients of the Butterworth filter and to filter the data
+C# Library to calculate the coefficients of the Butterworth filter and to filter the data. This is the code uploaded in nuget.org.
 
 This code calculates the coefficients of the Band-pass, Band-stop, Low-pass and High-pass Butterworth filters.  It also filters the data, but no zero-phase delay is applied. The namespace is IIR_Butterworth_CS_Library. The code follows the same steps as in Matlab.
 
