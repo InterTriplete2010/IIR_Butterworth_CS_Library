@@ -16,4 +16,4 @@ Each filter function will return a 2 rows x N coefficients 2D vector, where Row 
 
 6) Filter the data: the method is "double[] Filter_Data(double[][] coeff_filt, double[] pre_filt_signal)". The two arguments are the filter coefficients and the signal to be filtered. It returns the filtered signal.
 
-If you have any question and/or want to report bugs, please e-mail me (Ale) at: pressalex@hotmail.com
+If you have any questions and/or want to report bugs, please e-mail me (Ale) at: pressalex@hotmail.com
