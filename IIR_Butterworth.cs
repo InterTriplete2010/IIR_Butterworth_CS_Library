@@ -892,8 +892,8 @@ namespace IIR_Butterworth_CS_Library
 
             }
 
-            else
-            {
+            //else
+            //{
 
                 save_filt_coeff = new double[2][];
 
@@ -904,7 +904,7 @@ namespace IIR_Butterworth_CS_Library
 
                 }
 
-            }
+            //}
 
             int type_filt = 0;
 
@@ -1048,8 +1048,8 @@ namespace IIR_Butterworth_CS_Library
 
             }
 
-            else
-            {
+            //else
+            //{
 
                 save_filt_coeff = new double[2][];
 
@@ -1060,7 +1060,7 @@ namespace IIR_Butterworth_CS_Library
 
                 }
 
-            }
+            //}
 
             int type_filt = 1;
 
@@ -1220,8 +1220,8 @@ namespace IIR_Butterworth_CS_Library
 
             }
 
-            else
-            {
+            //else
+            //{
 
                 save_filt_coeff = new double[2][];
 
@@ -1232,7 +1232,7 @@ namespace IIR_Butterworth_CS_Library
 
                 }
 
-            }
+            //}
 
             int type_filt = 3;
 
@@ -1335,8 +1335,8 @@ namespace IIR_Butterworth_CS_Library
 
             }
 
-            else
-            {
+            //else
+            //{
 
                 save_filt_coeff = new double[2][];
 
@@ -1345,7 +1345,7 @@ namespace IIR_Butterworth_CS_Library
 
                     save_filt_coeff[kk] = new double[order_filt + 1];
 
-                }
+                //}
 
             }
 
