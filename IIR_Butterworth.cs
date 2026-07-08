@@ -248,22 +248,6 @@ namespace IIR_Butterworth_CS_Library
 
         }
 
-
-        //Calculate the factorial of the given number
-        public int factorial(int i)
-        {
-
-            if (i <= 1)
-            {
-
-                return 1;
-
-            }
-
-            return i * factorial(i - 1);
-
-        }
-
         //Calculate the coefficients of the characteristic polynomial (Bernard Brooks' paper (2016))
         public Complex[] Char_poly(Matrix<Complex> temp_matr_poly, int row_col)
         {
@@ -293,7 +277,7 @@ namespace IIR_Butterworth_CS_Library
                     try
                     {
 
-                        num_det = factorial(row_col) / (factorial(row_col - kk) * factorial(kk));  //Calculate the number of combinations   
+                        num_det = (int)(Factorial(row_col) / (Factorial(row_col - kk) * Factorial(kk)));  //Calculate the number of combinations    
 
                     }
 
@@ -392,7 +376,7 @@ namespace IIR_Butterworth_CS_Library
         }
 
         //Calculate the factorial of the given number
-        public int Factorial(int i)
+        public long Factorial(int i)
         {
 
             if (i <= 1)
@@ -402,7 +386,7 @@ namespace IIR_Butterworth_CS_Library
 
             }
 
-            return i * factorial(i - 1);
+            return i * Factorial(i - 1);
 
         }
 
